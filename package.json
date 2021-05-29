@@ -1,0 +1,28 @@
+{
+  "name": "github",
+  "version": "1.0.0",
+  "description": "Github clone using tailwindcss ",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build src/styles.css -o public/styles.css",
+    "build" : "npm run build-css && live-server ./public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/supriya-kotturu/github.git"
+  },
+  "keywords": [
+    "node.js",
+    "tailwindcss"
+  ],
+  "author": "supriya kotturu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/supriya-kotturu/github/issues"
+  },
+  "homepage": "https://github.com/supriya-kotturu/github#readme",
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "tailwindcss": "^2.1.2"
+  }
+}
