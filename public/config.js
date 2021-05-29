@@ -1,7 +1,7 @@
 const CONFIG = {
   API_NAME: "Github",
-  API_URL: "api/url/v0.1",
-  API_KEY: "apixxx",
+  API_URL: "https://api.github.com",
+  API_TOKEN: "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",
 };
 
 export default CONFIG;

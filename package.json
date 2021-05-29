@@ -4,7 +4,7 @@
   "description": "Github clone using tailwindcss ",
   "main": "index.js",
   "scripts": {
-    "build-css": "tailwindcss build src/styles.css -o public/styles.css",
+    "build-css": "tailwindcss build src/style.css -o public/style.css",
     "build": "npm run build-css && live-server ./public"
   },
   "repository": {
@@ -24,6 +24,7 @@
   "dependencies": {
     "dotenv": "^10.0.0",
     "live-server": "^1.2.1",
-    "tailwindcss": "^2.1.2"
+    "tailwindcss": "^2.1.2",
+    "typeface-poppins": "^1.1.13"
   }
 }
