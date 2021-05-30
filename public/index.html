@@ -9,7 +9,7 @@
     <link rel="icon" type="image/ico" href="./static/img/GitHub-Mark-Light-120px-plus.png">
     <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./style.css">
-    <script type="module" src="./index.js"></script>
+    <script src="./index.js" type="module"></script>
 </head>
 
 <body class="text-gray-500">
@@ -37,31 +37,30 @@
         <h4>Users</h4>
         <!-- name, company, blog, location, email, hirable, bio, twitter_username, public_repos, followers, following , avatar_url, html_url, -->
 
-        <div class="users-container grid md:grid-flow-col-3 lg:grid-cols-4 md:grid-cols-2 px-12 gap-10">
+        <div id="users-container" class="grid lg:grid-cols-4 md:grid-cols-2 px-12 gap-10">
             <div class="user bg-indigo-200 w-full p-6 rounded-xl shadow-xl ">
                 <div class="flex flex-row justify-start">
                     <div class="w-1/3 h-1/3 md:h-32 md:w-32 bg-gray-300 rounded-full overflow-hidden shadow-md">
                         <img src="https://avatars.githubusercontent.com/u/38?v=4" alt="">
                     </div>
-                    <div class="text-center grid ml-5 text-left">
-                        <span class="text-xl font-bold ">Name </span>
-                        <span class="inline-block">Company</span>
-                        <span class="inline-block">Location</span>
+                    <div class="grid ml-5 text-left">
+                        <span class="text-xl font-bold">Name </span>
+                        <span class="inline-block">Company @ Location</span>
                         <span class="inline-block">Hirable</span>
                         <span class="inline-block"> twitter </span>
                         <span class="inline-block"> email</span>
                         <span class="inline-block">blog</span>
                     </div>
                 </div>
-                <div class="bio">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa voluptates earum ducimus vel illo
-                        praesentium, dolorum, commodi velit aspernatur quae in at sed animi rerum. Id labore inventore
-                        tenetur sit. </p>
+                <div
+                    class="bio mx-6 my-2 py-2 px-6 md:p-2 md:m-1 md:h-28 md:text-base  text-center font-bold text-lg border-b-2 rounded-b border-gray-400 overflow-hidden h-32 m-auto">
+                    <blockquote>Lorem ipsum dolor sit amet a! Lorem ipsum dolor sit amet consectetur,
+                    </blockquote>
                 </div>
                 <div
                     class="stats  grid md:grid-cols-3 grid-flow-row  gap-10 grid-cols-3  justify-around p-1 align-baseline">
                     <div class="followers grid text-center">
-                        <span class="font-bold bg-gray-500 py-1 px-2  rounded text-white text-center align-baseline">
+                        <span class="font-bold bg-gray-500 py-1 px-2  rounded text-white items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline-block text-yellow-400"
                                 fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -70,17 +69,16 @@
                             <span class="text-xl text-yellow-400">34</span>
                             Followers</span>
                     </div>
-                    <div class=" following grid text-center">
+                    <div class=" following grid text-center items-center">
                         <span class="font-bold bg-gray-500  py-1 px-2  rounded text-white">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline-block text-yellow-400 mr-1 "
-                                fill="
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline-block text-yellow-400" fill="
                                 none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
 
                             </svg>
                             <span class="text-xl text-yellow-400">34</span>
-                            Following</span>
+                            <span>Following</span></span>
                     </div>
                     <div class="public-repos grid text-center">
                         <span class="font-bold bg-purple py-1 px-2 rounded text-white text-center">
